@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #fff;
+    }
+
+    .wrapper {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .social {
+      background-color: #eae9e9;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .icon {
+      font-size: 1.2em;
+    }
+
+    .blog:hover {
+      background-color: #ffbd2f;
+    }
+
+    .email:hover {
+      background-color: #23c8c8;
+    }
+
+    .facebook:hover {
+      background-color: #4267B2;
+    }
+
+    .instagram:hover {
+      background: radial-gradient(circle, rgba(241, 102, 217, 1) 10%, rgba(252, 176, 69, 1) 76%, rgba(253, 29, 29, 1) 100%);
+    }
+
+    .linkedin:hover {
+      background-color: #0e76a8;
+    }
+
+    .twitter:hover {
+      background-color: #26a7de;
+    }
+
+    .reddit:hover {
+      background-color: #ff4500;
+    }
+
+    .tiktok:hover {
+      background-color: #ff0050;
+    }
+
+    .youtube:hover {
+      background-color: #FF0000;
+    }
+
+    .pinterest:hover {
+      background-color: #c8232c;
+    }
+
+    .telegram:hover {
+      background-color: #2AABEE;
+    }
+
+    .social:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Start blog Icon -->
+    <div id="blog" onclick="navigate(this.id)" class="social blog">
+      <span class="icon"><i class="fa-solid fa-blog"></i></span>
+    </div>
+    <!-- End blog Icon -->
+
+    <!-- Start email Icon -->
+    <div id="email" onclick="navigate(this.id)" class="social email">
+      <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+    </div>
+    <!-- End email Icon -->
+
+    <!-- Start instagram Icon -->
+    <div id="instagram" onclick="navigate(this.id)" class="social instagram">
+      <span class="icon"><i class="fab fa-instagram"></i></span>
+    </div>
+    <!-- End instagram Icon -->
+
+    <!-- Start linkedin Icon -->
+    <div id="linkedin" onclick="navigate(this.id)" class="social linkedin">
+      <span class="icon"><i class="fab fa-linkedin"></i></span>
+    </div>
+    <!-- End linkedin Icon -->
+
+    <!-- Start tiktok Icon -->
+    <div id="tiktok" onclick="navigate(this.id)" class="social tiktok">
+      <span class="icon"><i class="fab fa-tiktok"></i></span>
+    </div>
+    <!-- End tiktok Icon -->
+
+    <!-- Start pinterest Icon -->
+    <div id="pinterest" onclick="navigate(this.id)" class="social pinterest">
+      <span class="icon"><i class="fab fa-pinterest"></i></span>
+    </div>
+    <!-- End pinterest Icon -->
+  </div>
+
+  <script>
+    function navigate(id) {
+      if (id === "blog")
+        window.open("https://toldbytendo.tumblr.com/", '_blank').focus();
+
+      else if (id === "email") {
+        window.open("mailto:rlkuuzabuwe1@gmail.com", '_blank').focus();
+      }
+
+      else if (id === "instagram") {
+        window.open("https://www.instagram.com/texndo/", '_blank').focus();
+      }
+
+      else if (id === "linkedin") {
+        window.open("https://www.linkedin.com/in/rutendo-kuuzabuwe-144682300/", '_blank').focus();
+      }
+
+      else if (id === "tiktok") {
+        window.open("https://www.tiktok.com/@texndoo?_t=ZN-8x9crh3JUbm&_r=1", '_blank').focus();
+      }
+
+      else if (id === "pinterest") {
+        window.open("https://uk.pinterest.com/msrxleane/", '_blank').focus();
+      }
+    }
+  </script>
+
+</body>
+
+</html>
